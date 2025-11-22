@@ -1,4 +1,4 @@
-from noise import _NoiseArray
+from src.noise import _NoiseArray
 from PIL import ImageFont, ImageDraw, Image
 import numpy as np
 from typing import Iterable, TypeAlias
@@ -36,11 +36,8 @@ class VideoGenerator:
         height: int,
         backgrounds: Iterable[_NoiseArray],
         texts: Iterable[_NoiseArray],
-        text: str,
         font_path: str | None = None,
         font_size: int = 150,
-        length: int = 200,
-        step: int = 1,
         fps: int = 30,
     ):
         """입력된 정보를 바탕으로 영상을 만듭니다.
@@ -62,15 +59,34 @@ class VideoGenerator:
 
         if font_path:
             try:
-                font = ImageFont.truetype(font_path, font_size)
+                self.font = ImageFont.truetype(font_path, font_size)
             except IOError:
-                font = ImageFont.load_default(font_size)
+                self.font = ImageFont.load_default(font_size)
         else:
-            font = ImageFont.load_default(font_size)
+            self.font = ImageFont.load_default(font_size)
 
-        self.mask = _get_text_mask(width, height, text, font)
+        # self.mask = _get_text_mask(width, height, text, font)
 
-    def save(self, path: str):
+    def raw(self, text: str, mask_maker=_get_text_mask) -> list[Image.Image]:
+        """PIL.Image의 list로 변환합니다."""
+        data: list[Image.Image] = []
+        mask = mask_maker(*self.shape, text, self.font)
+
+        # 텍스트/배경 가져와서 마스크 적용하고 합치기
+        for text_noise, background_noise in zip(self.texts, self.backgrounds):
+            frame = background_noise.copy()
+            frame[mask] = text_noise[mask]
+            data.append(Image.fromarray(frame))
+
+        return data
+
+    def init_transforms(
+        self, backgrounds: Iterable[_NoiseArray], texts: Iterable[_NoiseArray]
+    ):
+        self.backgrounds = backgrounds
+        self.texts = texts
+
+    def save(self, text: str, path: str):
         """지정된 장소에 영상을 저장합니다.
 
         Args:
@@ -78,11 +94,12 @@ class VideoGenerator:
         """
         fourcc = cv2.VideoWriter.fourcc(*"mp4v")
         writer = cv2.VideoWriter(path, fourcc, self.fps, self.shape)
+        mask = _get_text_mask(*self.shape, text, self.font)
 
         # 텍스트/배경 가져와서 마스크 적용하고 합치기
-        for text, background in zip(self.texts, self.backgrounds):
-            frame = background.copy()
-            frame[self.mask] = text[self.mask]
+        for text_noise, background_noise in zip(self.texts, self.backgrounds):
+            frame = background_noise.copy()
+            frame[mask] = text_noise[mask]
             bgr = cv2.cvtColor(frame, cv2.COLOR_GRAY2BGR)
             writer.write(bgr)
 

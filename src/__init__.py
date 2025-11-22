@@ -39,11 +39,12 @@ DDong는 영상을 크게 두 개의 영역(배경, 텍스트)로 구분하고 �
 비디오 생성기는 텍스트 마스크를 관리하며, 텍스트 영역과 그렇지 않은 영역을 구분하여, 배경과 텍스트의 노이즈 이미지를 합치는 역할을 합니다.
 """
 
-from transform import LinearTransform, Direction
-from noise import BernoulliNoise
-from video import VideoGenerator
+from src.transform import LinearTransform, Direction, NoTransform
+from src.noise import BernoulliNoise
+from src.video import VideoGenerator
 
 __all__ = (
+    "NoTransform",
     "LinearTransform",
     "Direction",
     "BernoulliNoise",

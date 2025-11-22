@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
-from noise import _NoiseArray
+from copy import deepcopy
+from src.noise import _NoiseArray
 from enum import Enum
 import numpy as np
 
@@ -11,9 +12,10 @@ class Transform(ABC):
     @abstractmethod
     def __next__(self) -> _NoiseArray: ...
     def __iter__(self):
-        yield self.content
+        new = deepcopy(self)
+        yield new.content
         while True:
-            yield self.__next__()
+            yield new.__next__()
 
 
 class Direction(Enum):
@@ -36,4 +38,12 @@ class LinearTransform(Transform):
             axis=self.axis,
         )
 
+        return self.content
+
+
+class NoTransform(Transform):
+    def __init__(self, initial: _NoiseArray):
+        self.content = initial
+
+    def __next__(self) -> _NoiseArray:
         return self.content

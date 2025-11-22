@@ -20,13 +20,12 @@ def main():
         height=height,
         backgrounds=backgrounds,
         texts=texts,
-        text="똥",
         font_path="./resources/malgun.ttf",
         font_size=200,
         fps=60,
     )
 
-    vg.save(path="./ddong.avi")
+    vg.save(text="똥", path="./ddong.avi")
 
 
 if __name__ == "__main__":
