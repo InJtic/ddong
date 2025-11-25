@@ -3,7 +3,7 @@ from PIL import ImageFont
 from src.transition import Transition
 from numpy.typing import NDArray
 import numpy as np
-from data.noise import NoiseGenerator
+from src.data.noise import NoiseGenerator
 from typing import Iterable, Callable, TypeAlias
 from itertools import product, repeat, islice
 
