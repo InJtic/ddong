@@ -11,12 +11,10 @@ def upload_to_hf(data_dir: str, repo_id: str, token: str | None = None):
     )
     print(f"Uploading files from {data_dir}/*")
 
-    api.upload_folder(
+    api.upload_large_folder(
         folder_path=data_dir,
         repo_id=repo_id,
         repo_type="dataset",
-        path_in_repo=".",
-        token=token,
     )
 
 
