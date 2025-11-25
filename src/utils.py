@@ -151,7 +151,7 @@ def save_metadata(
 
     if not os.path.isfile(path):
         pathobj = Path(path)
-        pathobj.mkdir(parents=True, exist_ok=True)
+        pathobj.parent.mkdir(parents=True, exist_ok=True)
         pathobj.touch()
 
     df.to_csv(path, mode="a", index=True)
