@@ -1,0 +1,325 @@
+,move_per_frame,move_direction,label,options,fps,font_size,length,width,height,noise,seed,savedat
+0,1,DOWN,A,"('A', 'B', 'C', 'D')",10,0.2,2,224,224,BernoulliNoise(0.8),18,data/18
+0,1,DOWN,1,"('0', '1')",10,0.4,2,224,224,BernoulliNoise(0.8),12,data/12
+0,1,UP_RIGHT,0,"('0', '1')",10,0.2,2,224,224,BernoulliNoise(0.8),54,data/54
+0,1,DOWN,B,"('A', 'B', 'C', 'D')",10,0.2,2,224,224,BernoulliNoise(0.8),27,data/27
+0,1,DOWN,1,"('0', '1')",10,0.2,2,224,224,BernoulliNoise(0.8),9,data/9
+0,1,DOWN,0,"('0', '1')",10,0.2,2,224,224,BernoulliNoise(0.8),0,data/0
+0,1,DOWN,A,"('A', 'B', 'C', 'D')",10,0.4,2,224,224,BernoulliNoise(0.8),21,data/21
+0,1,DOWN,C,"('A', 'B', 'C', 'D')",10,0.2,2,224,224,BernoulliNoise(0.8),36,data/36
+0,1,DOWN,B,"('A', 'B', 'C', 'D')",10,0.4,2,224,224,BernoulliNoise(0.8),30,data/30
+0,1,DOWN,D,"('A', 'B', 'C', 'D')",10,0.4,2,224,224,BernoulliNoise(0.8),48,data/48
+0,1,DOWN,1,"('0', '1')",10,0.6,2,224,224,BernoulliNoise(0.8),15,data/15
+0,1,DOWN,0,"('0', '1')",10,0.4,2,224,224,BernoulliNoise(0.8),3,data/3
+0,1,DOWN,C,"('A', 'B', 'C', 'D')",10,0.4,2,224,224,BernoulliNoise(0.8),39,data/39
+0,1,DOWN,C,"('A', 'B', 'C', 'D')",10,0.6,2,224,224,BernoulliNoise(0.8),42,data/42
+0,1,DOWN,D,"('A', 'B', 'C', 'D')",10,0.2,2,224,224,BernoulliNoise(0.8),45,data/45
+0,1,DOWN,D,"('A', 'B', 'C', 'D')",10,0.6,2,224,224,BernoulliNoise(0.8),51,data/51
+0,1,DOWN,A,"('A', 'B', 'C', 'D')",10,0.6,2,224,224,BernoulliNoise(0.8),24,data/24
+0,1,DOWN,0,"('0', '1')",10,0.6,2,224,224,BernoulliNoise(0.8),6,data/6
+0,1,DOWN,B,"('A', 'B', 'C', 'D')",10,0.6,2,224,224,BernoulliNoise(0.8),33,data/33
+0,1,DOWN,1,"('0', '1')",20,0.2,2,224,224,BernoulliNoise(0.8),10,data/10
+0,1,DOWN,A,"('A', 'B', 'C', 'D')",20,0.2,2,224,224,BernoulliNoise(0.8),19,data/19
+0,1,DOWN,A,"('A', 'B', 'C', 'D')",20,0.4,2,224,224,BernoulliNoise(0.8),22,data/22
+0,1,DOWN,1,"('0', '1')",20,0.4,2,224,224,BernoulliNoise(0.8),13,data/13
+0,1,DOWN,0,"('0', '1')",20,0.2,2,224,224,BernoulliNoise(0.8),1,data/1
+0,1,DOWN,B,"('A', 'B', 'C', 'D')",20,0.2,2,224,224,BernoulliNoise(0.8),28,data/28
+0,1,UP_RIGHT,0,"('0', '1')",20,0.2,2,224,224,BernoulliNoise(0.8),55,data/55
+0,1,UP_RIGHT,0,"('0', '1')",10,0.4,2,224,224,BernoulliNoise(0.8),57,data/57
+0,1,UP_RIGHT,1,"('0', '1')",10,0.4,2,224,224,BernoulliNoise(0.8),66,data/66
+0,1,DOWN,C,"('A', 'B', 'C', 'D')",20,0.4,2,224,224,BernoulliNoise(0.8),40,data/40
+0,1,DOWN,C,"('A', 'B', 'C', 'D')",20,0.6,2,224,224,BernoulliNoise(0.8),43,data/43
+0,1,DOWN,D,"('A', 'B', 'C', 'D')",20,0.2,2,224,224,BernoulliNoise(0.8),46,data/46
+0,1,DOWN,1,"('0', '1')",20,0.6,2,224,224,BernoulliNoise(0.8),16,data/16
+0,1,DOWN,A,"('A', 'B', 'C', 'D')",20,0.6,2,224,224,BernoulliNoise(0.8),25,data/25
+0,1,DOWN,C,"('A', 'B', 'C', 'D')",20,0.2,2,224,224,BernoulliNoise(0.8),37,data/37
+0,1,DOWN,0,"('0', '1')",20,0.6,2,224,224,BernoulliNoise(0.8),7,data/7
+0,1,UP_RIGHT,1,"('0', '1')",10,0.2,2,224,224,BernoulliNoise(0.8),63,data/63
+0,1,DOWN,D,"('A', 'B', 'C', 'D')",20,0.4,2,224,224,BernoulliNoise(0.8),49,data/49
+0,1,DOWN,0,"('0', '1')",20,0.4,2,224,224,BernoulliNoise(0.8),4,data/4
+0,1,UP_RIGHT,1,"('0', '1')",10,0.6,2,224,224,BernoulliNoise(0.8),69,data/69
+0,1,DOWN,B,"('A', 'B', 'C', 'D')",20,0.6,2,224,224,BernoulliNoise(0.8),34,data/34
+0,1,UP_RIGHT,A,"('A', 'B', 'C', 'D')",10,0.2,2,224,224,BernoulliNoise(0.8),72,data/72
+0,1,DOWN,B,"('A', 'B', 'C', 'D')",20,0.4,2,224,224,BernoulliNoise(0.8),31,data/31
+0,1,UP_RIGHT,0,"('0', '1')",10,0.6,2,224,224,BernoulliNoise(0.8),60,data/60
+0,1,DOWN,D,"('A', 'B', 'C', 'D')",20,0.6,2,224,224,BernoulliNoise(0.8),52,data/52
+0,1,DOWN,0,"('0', '1')",30,0.2,2,224,224,BernoulliNoise(0.8),2,data/2
+0,1,DOWN,A,"('A', 'B', 'C', 'D')",30,0.4,2,224,224,BernoulliNoise(0.8),23,data/23
+0,1,DOWN,C,"('A', 'B', 'C', 'D')",30,0.2,2,224,224,BernoulliNoise(0.8),38,data/38
+0,1,UP_RIGHT,A,"('A', 'B', 'C', 'D')",10,0.4,2,224,224,BernoulliNoise(0.8),75,data/75
+0,1,DOWN,C,"('A', 'B', 'C', 'D')",30,0.6,2,224,224,BernoulliNoise(0.8),44,data/44
+0,1,DOWN,1,"('0', '1')",30,0.6,2,224,224,BernoulliNoise(0.8),17,data/17
+0,1,DOWN,1,"('0', '1')",30,0.2,2,224,224,BernoulliNoise(0.8),11,data/11
+0,1,DOWN,0,"('0', '1')",30,0.4,2,224,224,BernoulliNoise(0.8),5,data/5
+0,1,DOWN,1,"('0', '1')",30,0.4,2,224,224,BernoulliNoise(0.8),14,data/14
+0,1,DOWN,A,"('A', 'B', 'C', 'D')",30,0.2,2,224,224,BernoulliNoise(0.8),20,data/20
+0,1,UP_RIGHT,1,"('0', '1')",20,0.2,2,224,224,BernoulliNoise(0.8),64,data/64
+0,1,UP_RIGHT,B,"('A', 'B', 'C', 'D')",10,0.2,2,224,224,BernoulliNoise(0.8),81,data/81
+0,1,DOWN,D,"('A', 'B', 'C', 'D')",30,0.4,2,224,224,BernoulliNoise(0.8),50,data/50
+0,1,DOWN,A,"('A', 'B', 'C', 'D')",30,0.6,2,224,224,BernoulliNoise(0.8),26,data/26
+0,1,UP_RIGHT,A,"('A', 'B', 'C', 'D')",10,0.6,2,224,224,BernoulliNoise(0.8),78,data/78
+0,1,DOWN,B,"('A', 'B', 'C', 'D')",30,0.2,2,224,224,BernoulliNoise(0.8),29,data/29
+0,1,DOWN,C,"('A', 'B', 'C', 'D')",30,0.4,2,224,224,BernoulliNoise(0.8),41,data/41
+0,1,DOWN,D,"('A', 'B', 'C', 'D')",30,0.2,2,224,224,BernoulliNoise(0.8),47,data/47
+0,1,UP_RIGHT,1,"('0', '1')",20,0.4,2,224,224,BernoulliNoise(0.8),67,data/67
+0,1,UP_RIGHT,C,"('A', 'B', 'C', 'D')",10,0.2,2,224,224,BernoulliNoise(0.8),90,data/90
+0,1,DOWN,0,"('0', '1')",30,0.6,2,224,224,BernoulliNoise(0.8),8,data/8
+0,1,DOWN,B,"('A', 'B', 'C', 'D')",30,0.4,2,224,224,BernoulliNoise(0.8),32,data/32
+0,1,UP_RIGHT,C,"('A', 'B', 'C', 'D')",10,0.4,2,224,224,BernoulliNoise(0.8),93,data/93
+0,1,UP_RIGHT,0,"('0', '1')",20,0.6,2,224,224,BernoulliNoise(0.8),61,data/61
+0,1,UP_RIGHT,0,"('0', '1')",20,0.4,2,224,224,BernoulliNoise(0.8),58,data/58
+0,1,UP_RIGHT,1,"('0', '1')",20,0.6,2,224,224,BernoulliNoise(0.8),70,data/70
+0,1,UP_RIGHT,A,"('A', 'B', 'C', 'D')",20,0.2,2,224,224,BernoulliNoise(0.8),73,data/73
+0,1,UP_RIGHT,B,"('A', 'B', 'C', 'D')",10,0.4,2,224,224,BernoulliNoise(0.8),84,data/84
+0,1,UP_RIGHT,0,"('0', '1')",30,0.2,2,224,224,BernoulliNoise(0.8),56,data/56
+0,1,UP_RIGHT,B,"('A', 'B', 'C', 'D')",10,0.6,2,224,224,BernoulliNoise(0.8),87,data/87
+0,1,DOWN,B,"('A', 'B', 'C', 'D')",30,0.6,2,224,224,BernoulliNoise(0.8),35,data/35
+0,1,UP_RIGHT,D,"('A', 'B', 'C', 'D')",10,0.2,2,224,224,BernoulliNoise(0.8),99,data/99
+0,1,UP_RIGHT,C,"('A', 'B', 'C', 'D')",10,0.6,2,224,224,BernoulliNoise(0.8),96,data/96
+0,1,DOWN,D,"('A', 'B', 'C', 'D')",30,0.6,2,224,224,BernoulliNoise(0.8),53,data/53
+0,1,UP_RIGHT,B,"('A', 'B', 'C', 'D')",20,0.2,2,224,224,BernoulliNoise(0.8),82,data/82
+0,1,UP_RIGHT,1,"('0', '1')",30,0.2,2,224,224,BernoulliNoise(0.8),65,data/65
+0,3,DOWN,0,"('0', '1')",10,0.2,2,224,224,BernoulliNoise(0.8),108,data/108
+0,1,UP_RIGHT,D,"('A', 'B', 'C', 'D')",10,0.4,2,224,224,BernoulliNoise(0.8),102,data/102
+0,1,UP_RIGHT,A,"('A', 'B', 'C', 'D')",20,0.4,2,224,224,BernoulliNoise(0.8),76,data/76
+0,1,UP_RIGHT,0,"('0', '1')",30,0.4,2,224,224,BernoulliNoise(0.8),59,data/59
+0,3,DOWN,1,"('0', '1')",10,0.2,2,224,224,BernoulliNoise(0.8),117,data/117
+0,1,UP_RIGHT,C,"('A', 'B', 'C', 'D')",20,0.2,2,224,224,BernoulliNoise(0.8),91,data/91
+0,1,UP_RIGHT,A,"('A', 'B', 'C', 'D')",30,0.2,2,224,224,BernoulliNoise(0.8),74,data/74
+0,1,UP_RIGHT,A,"('A', 'B', 'C', 'D')",20,0.6,2,224,224,BernoulliNoise(0.8),79,data/79
+0,1,UP_RIGHT,1,"('0', '1')",30,0.6,2,224,224,BernoulliNoise(0.8),71,data/71
+0,1,UP_RIGHT,B,"('A', 'B', 'C', 'D')",20,0.4,2,224,224,BernoulliNoise(0.8),85,data/85
+0,1,UP_RIGHT,1,"('0', '1')",30,0.4,2,224,224,BernoulliNoise(0.8),68,data/68
+0,3,DOWN,0,"('0', '1')",10,0.4,2,224,224,BernoulliNoise(0.8),111,data/111
+0,1,UP_RIGHT,D,"('A', 'B', 'C', 'D')",10,0.6,2,224,224,BernoulliNoise(0.8),105,data/105
+0,3,DOWN,1,"('0', '1')",10,0.4,2,224,224,BernoulliNoise(0.8),120,data/120
+0,1,UP_RIGHT,0,"('0', '1')",30,0.6,2,224,224,BernoulliNoise(0.8),62,data/62
+0,1,UP_RIGHT,C,"('A', 'B', 'C', 'D')",30,0.2,2,224,224,BernoulliNoise(0.8),92,data/92
+0,1,UP_RIGHT,C,"('A', 'B', 'C', 'D')",20,0.4,2,224,224,BernoulliNoise(0.8),94,data/94
+0,3,DOWN,1,"('0', '1')",10,0.6,2,224,224,BernoulliNoise(0.8),123,data/123
+0,3,DOWN,A,"('A', 'B', 'C', 'D')",10,0.2,2,224,224,BernoulliNoise(0.8),126,data/126
+0,3,DOWN,A,"('A', 'B', 'C', 'D')",10,0.4,2,224,224,BernoulliNoise(0.8),129,data/129
+0,1,UP_RIGHT,B,"('A', 'B', 'C', 'D')",30,0.2,2,224,224,BernoulliNoise(0.8),83,data/83
+0,1,UP_RIGHT,C,"('A', 'B', 'C', 'D')",20,0.6,2,224,224,BernoulliNoise(0.8),97,data/97
+0,3,DOWN,0,"('0', '1')",10,0.6,2,224,224,BernoulliNoise(0.8),114,data/114
+0,1,UP_RIGHT,D,"('A', 'B', 'C', 'D')",20,0.2,2,224,224,BernoulliNoise(0.8),100,data/100
+0,1,UP_RIGHT,A,"('A', 'B', 'C', 'D')",30,0.4,2,224,224,BernoulliNoise(0.8),77,data/77
+0,3,DOWN,0,"('0', '1')",20,0.2,2,224,224,BernoulliNoise(0.8),109,data/109
+0,1,UP_RIGHT,B,"('A', 'B', 'C', 'D')",20,0.6,2,224,224,BernoulliNoise(0.8),88,data/88
+0,3,DOWN,1,"('0', '1')",20,0.2,2,224,224,BernoulliNoise(0.8),118,data/118
+0,3,DOWN,B,"('A', 'B', 'C', 'D')",10,0.2,2,224,224,BernoulliNoise(0.8),135,data/135
+0,3,DOWN,A,"('A', 'B', 'C', 'D')",10,0.6,2,224,224,BernoulliNoise(0.8),132,data/132
+0,3,DOWN,B,"('A', 'B', 'C', 'D')",10,0.4,2,224,224,BernoulliNoise(0.8),138,data/138
+0,1,UP_RIGHT,B,"('A', 'B', 'C', 'D')",30,0.4,2,224,224,BernoulliNoise(0.8),86,data/86
+0,3,DOWN,1,"('0', '1')",20,0.4,2,224,224,BernoulliNoise(0.8),121,data/121
+0,3,DOWN,C,"('A', 'B', 'C', 'D')",10,0.2,2,224,224,BernoulliNoise(0.8),144,data/144
+0,1,UP_RIGHT,D,"('A', 'B', 'C', 'D')",20,0.4,2,224,224,BernoulliNoise(0.8),103,data/103
+0,1,UP_RIGHT,D,"('A', 'B', 'C', 'D')",20,0.6,2,224,224,BernoulliNoise(0.8),106,data/106
+0,3,DOWN,0,"('0', '1')",20,0.4,2,224,224,BernoulliNoise(0.8),112,data/112
+0,3,DOWN,C,"('A', 'B', 'C', 'D')",10,0.4,2,224,224,BernoulliNoise(0.8),147,data/147
+0,1,UP_RIGHT,C,"('A', 'B', 'C', 'D')",30,0.4,2,224,224,BernoulliNoise(0.8),95,data/95
+0,1,UP_RIGHT,A,"('A', 'B', 'C', 'D')",30,0.6,2,224,224,BernoulliNoise(0.8),80,data/80
+0,1,UP_RIGHT,B,"('A', 'B', 'C', 'D')",30,0.6,2,224,224,BernoulliNoise(0.8),89,data/89
+0,3,DOWN,1,"('0', '1')",20,0.6,2,224,224,BernoulliNoise(0.8),124,data/124
+0,3,DOWN,A,"('A', 'B', 'C', 'D')",20,0.2,2,224,224,BernoulliNoise(0.8),127,data/127
+0,3,DOWN,D,"('A', 'B', 'C', 'D')",10,0.2,2,224,224,BernoulliNoise(0.8),153,data/153
+0,3,DOWN,0,"('0', '1')",30,0.2,2,224,224,BernoulliNoise(0.8),110,data/110
+0,1,UP_RIGHT,D,"('A', 'B', 'C', 'D')",30,0.2,2,224,224,BernoulliNoise(0.8),101,data/101
+0,3,DOWN,B,"('A', 'B', 'C', 'D')",20,0.2,2,224,224,BernoulliNoise(0.8),136,data/136
+0,3,DOWN,D,"('A', 'B', 'C', 'D')",10,0.4,2,224,224,BernoulliNoise(0.8),156,data/156
+0,3,DOWN,B,"('A', 'B', 'C', 'D')",10,0.6,2,224,224,BernoulliNoise(0.8),141,data/141
+0,3,DOWN,C,"('A', 'B', 'C', 'D')",10,0.6,2,224,224,BernoulliNoise(0.8),150,data/150
+0,3,DOWN,0,"('0', '1')",20,0.6,2,224,224,BernoulliNoise(0.8),115,data/115
+0,3,DOWN,A,"('A', 'B', 'C', 'D')",20,0.4,2,224,224,BernoulliNoise(0.8),130,data/130
+0,1,UP_RIGHT,C,"('A', 'B', 'C', 'D')",30,0.6,2,224,224,BernoulliNoise(0.8),98,data/98
+0,3,DOWN,C,"('A', 'B', 'C', 'D')",20,0.2,2,224,224,BernoulliNoise(0.8),145,data/145
+0,3,UP_RIGHT,0,"('0', '1')",10,0.2,2,224,224,BernoulliNoise(0.8),162,data/162
+0,3,DOWN,1,"('0', '1')",30,0.2,2,224,224,BernoulliNoise(0.8),119,data/119
+0,1,UP_RIGHT,D,"('A', 'B', 'C', 'D')",30,0.4,2,224,224,BernoulliNoise(0.8),104,data/104
+0,3,DOWN,A,"('A', 'B', 'C', 'D')",20,0.6,2,224,224,BernoulliNoise(0.8),133,data/133
+0,3,UP_RIGHT,0,"('0', '1')",10,0.4,2,224,224,BernoulliNoise(0.8),165,data/165
+0,1,UP_RIGHT,D,"('A', 'B', 'C', 'D')",30,0.6,2,224,224,BernoulliNoise(0.8),107,data/107
+0,3,DOWN,1,"('0', '1')",30,0.4,2,224,224,BernoulliNoise(0.8),122,data/122
+0,3,DOWN,D,"('A', 'B', 'C', 'D')",10,0.6,2,224,224,BernoulliNoise(0.8),159,data/159
+0,3,DOWN,B,"('A', 'B', 'C', 'D')",20,0.4,2,224,224,BernoulliNoise(0.8),139,data/139
+0,3,DOWN,0,"('0', '1')",30,0.4,2,224,224,BernoulliNoise(0.8),113,data/113
+0,3,DOWN,A,"('A', 'B', 'C', 'D')",30,0.2,2,224,224,BernoulliNoise(0.8),128,data/128
+0,3,DOWN,D,"('A', 'B', 'C', 'D')",20,0.2,2,224,224,BernoulliNoise(0.8),154,data/154
+0,3,UP_RIGHT,1,"('0', '1')",10,0.2,2,224,224,BernoulliNoise(0.8),171,data/171
+0,3,UP_RIGHT,1,"('0', '1')",10,0.4,2,224,224,BernoulliNoise(0.8),174,data/174
+0,3,UP_RIGHT,1,"('0', '1')",10,0.6,2,224,224,BernoulliNoise(0.8),177,data/177
+0,3,DOWN,0,"('0', '1')",30,0.6,2,224,224,BernoulliNoise(0.8),116,data/116
+0,3,UP_RIGHT,0,"('0', '1')",10,0.6,2,224,224,BernoulliNoise(0.8),168,data/168
+0,3,DOWN,A,"('A', 'B', 'C', 'D')",30,0.4,2,224,224,BernoulliNoise(0.8),131,data/131
+0,3,UP_RIGHT,A,"('A', 'B', 'C', 'D')",10,0.2,2,224,224,BernoulliNoise(0.8),180,data/180
+0,3,DOWN,C,"('A', 'B', 'C', 'D')",20,0.4,2,224,224,BernoulliNoise(0.8),148,data/148
+0,3,DOWN,B,"('A', 'B', 'C', 'D')",30,0.2,2,224,224,BernoulliNoise(0.8),137,data/137
+0,3,DOWN,B,"('A', 'B', 'C', 'D')",20,0.6,2,224,224,BernoulliNoise(0.8),142,data/142
+0,3,DOWN,C,"('A', 'B', 'C', 'D')",30,0.2,2,224,224,BernoulliNoise(0.8),146,data/146
+0,3,UP_RIGHT,0,"('0', '1')",20,0.2,2,224,224,BernoulliNoise(0.8),163,data/163
+0,3,DOWN,D,"('A', 'B', 'C', 'D')",20,0.4,2,224,224,BernoulliNoise(0.8),157,data/157
+0,3,UP_RIGHT,A,"('A', 'B', 'C', 'D')",10,0.4,2,224,224,BernoulliNoise(0.8),183,data/183
+0,3,UP_RIGHT,B,"('A', 'B', 'C', 'D')",10,0.2,2,224,224,BernoulliNoise(0.8),189,data/189
+0,3,UP_RIGHT,B,"('A', 'B', 'C', 'D')",10,0.4,2,224,224,BernoulliNoise(0.8),192,data/192
+0,3,DOWN,1,"('0', '1')",30,0.6,2,224,224,BernoulliNoise(0.8),125,data/125
+0,3,DOWN,B,"('A', 'B', 'C', 'D')",30,0.4,2,224,224,BernoulliNoise(0.8),140,data/140
+0,3,DOWN,D,"('A', 'B', 'C', 'D')",30,0.2,2,224,224,BernoulliNoise(0.8),155,data/155
+0,3,UP_RIGHT,A,"('A', 'B', 'C', 'D')",10,0.6,2,224,224,BernoulliNoise(0.8),186,data/186
+0,3,DOWN,A,"('A', 'B', 'C', 'D')",30,0.6,2,224,224,BernoulliNoise(0.8),134,data/134
+0,3,DOWN,C,"('A', 'B', 'C', 'D')",20,0.6,2,224,224,BernoulliNoise(0.8),151,data/151
+0,3,DOWN,C,"('A', 'B', 'C', 'D')",30,0.4,2,224,224,BernoulliNoise(0.8),149,data/149
+0,3,UP_RIGHT,1,"('0', '1')",20,0.2,2,224,224,BernoulliNoise(0.8),172,data/172
+0,3,UP_RIGHT,C,"('A', 'B', 'C', 'D')",10,0.2,2,224,224,BernoulliNoise(0.8),198,data/198
+0,3,DOWN,D,"('A', 'B', 'C', 'D')",20,0.6,2,224,224,BernoulliNoise(0.8),160,data/160
+0,3,UP_RIGHT,0,"('0', '1')",20,0.4,2,224,224,BernoulliNoise(0.8),166,data/166
+0,3,UP_RIGHT,A,"('A', 'B', 'C', 'D')",20,0.2,2,224,224,BernoulliNoise(0.8),181,data/181
+0,3,UP_RIGHT,C,"('A', 'B', 'C', 'D')",10,0.4,2,224,224,BernoulliNoise(0.8),201,data/201
+0,3,DOWN,B,"('A', 'B', 'C', 'D')",30,0.6,2,224,224,BernoulliNoise(0.8),143,data/143
+0,3,UP_RIGHT,1,"('0', '1')",20,0.6,2,224,224,BernoulliNoise(0.8),178,data/178
+0,3,UP_RIGHT,1,"('0', '1')",20,0.4,2,224,224,BernoulliNoise(0.8),175,data/175
+0,3,UP_RIGHT,0,"('0', '1')",30,0.2,2,224,224,BernoulliNoise(0.8),164,data/164
+0,3,UP_RIGHT,B,"('A', 'B', 'C', 'D')",10,0.6,2,224,224,BernoulliNoise(0.8),195,data/195
+0,3,UP_RIGHT,A,"('A', 'B', 'C', 'D')",20,0.4,2,224,224,BernoulliNoise(0.8),184,data/184
+0,3,UP_RIGHT,B,"('A', 'B', 'C', 'D')",20,0.2,2,224,224,BernoulliNoise(0.8),190,data/190
+0,3,UP_RIGHT,D,"('A', 'B', 'C', 'D')",10,0.4,2,224,224,BernoulliNoise(0.8),210,data/210
+0,3,UP_RIGHT,D,"('A', 'B', 'C', 'D')",10,0.2,2,224,224,BernoulliNoise(0.8),207,data/207
+0,3,DOWN,D,"('A', 'B', 'C', 'D')",30,0.6,2,224,224,BernoulliNoise(0.8),161,data/161
+0,7,DOWN,0,"('0', '1')",10,0.2,2,224,224,BernoulliNoise(0.8),216,data/216
+0,3,UP_RIGHT,1,"('0', '1')",30,0.2,2,224,224,BernoulliNoise(0.8),173,data/173
+0,3,DOWN,C,"('A', 'B', 'C', 'D')",30,0.6,2,224,224,BernoulliNoise(0.8),152,data/152
+0,3,UP_RIGHT,0,"('0', '1')",20,0.6,2,224,224,BernoulliNoise(0.8),169,data/169
+0,3,DOWN,D,"('A', 'B', 'C', 'D')",30,0.4,2,224,224,BernoulliNoise(0.8),158,data/158
+0,3,UP_RIGHT,C,"('A', 'B', 'C', 'D')",10,0.6,2,224,224,BernoulliNoise(0.8),204,data/204
+0,3,UP_RIGHT,0,"('0', '1')",30,0.4,2,224,224,BernoulliNoise(0.8),167,data/167
+0,3,UP_RIGHT,D,"('A', 'B', 'C', 'D')",10,0.6,2,224,224,BernoulliNoise(0.8),213,data/213
+0,3,UP_RIGHT,A,"('A', 'B', 'C', 'D')",20,0.6,2,224,224,BernoulliNoise(0.8),187,data/187
+0,3,UP_RIGHT,1,"('0', '1')",30,0.4,2,224,224,BernoulliNoise(0.8),176,data/176
+0,7,DOWN,0,"('0', '1')",10,0.4,2,224,224,BernoulliNoise(0.8),219,data/219
+0,7,DOWN,1,"('0', '1')",10,0.2,2,224,224,BernoulliNoise(0.8),225,data/225
+0,3,UP_RIGHT,D,"('A', 'B', 'C', 'D')",20,0.2,2,224,224,BernoulliNoise(0.8),208,data/208
+0,3,UP_RIGHT,B,"('A', 'B', 'C', 'D')",20,0.4,2,224,224,BernoulliNoise(0.8),193,data/193
+0,3,UP_RIGHT,C,"('A', 'B', 'C', 'D')",20,0.2,2,224,224,BernoulliNoise(0.8),199,data/199
+0,3,UP_RIGHT,B,"('A', 'B', 'C', 'D')",20,0.6,2,224,224,BernoulliNoise(0.8),196,data/196
+0,3,UP_RIGHT,A,"('A', 'B', 'C', 'D')",30,0.2,2,224,224,BernoulliNoise(0.8),182,data/182
+0,3,UP_RIGHT,C,"('A', 'B', 'C', 'D')",20,0.4,2,224,224,BernoulliNoise(0.8),202,data/202
+0,7,DOWN,1,"('0', '1')",10,0.4,2,224,224,BernoulliNoise(0.8),228,data/228
+0,7,DOWN,A,"('A', 'B', 'C', 'D')",10,0.2,2,224,224,BernoulliNoise(0.8),234,data/234
+0,3,UP_RIGHT,1,"('0', '1')",30,0.6,2,224,224,BernoulliNoise(0.8),179,data/179
+0,7,DOWN,0,"('0', '1')",10,0.6,2,224,224,BernoulliNoise(0.8),222,data/222
+0,3,UP_RIGHT,A,"('A', 'B', 'C', 'D')",30,0.4,2,224,224,BernoulliNoise(0.8),185,data/185
+0,7,DOWN,1,"('0', '1')",10,0.6,2,224,224,BernoulliNoise(0.8),231,data/231
+0,7,DOWN,A,"('A', 'B', 'C', 'D')",10,0.4,2,224,224,BernoulliNoise(0.8),237,data/237
+0,3,UP_RIGHT,B,"('A', 'B', 'C', 'D')",30,0.2,2,224,224,BernoulliNoise(0.8),191,data/191
+0,7,DOWN,0,"('0', '1')",20,0.2,2,224,224,BernoulliNoise(0.8),217,data/217
+0,7,DOWN,B,"('A', 'B', 'C', 'D')",10,0.2,2,224,224,BernoulliNoise(0.8),243,data/243
+0,3,UP_RIGHT,0,"('0', '1')",30,0.6,2,224,224,BernoulliNoise(0.8),170,data/170
+0,3,UP_RIGHT,D,"('A', 'B', 'C', 'D')",20,0.4,2,224,224,BernoulliNoise(0.8),211,data/211
+0,3,UP_RIGHT,C,"('A', 'B', 'C', 'D')",20,0.6,2,224,224,BernoulliNoise(0.8),205,data/205
+0,3,UP_RIGHT,D,"('A', 'B', 'C', 'D')",20,0.6,2,224,224,BernoulliNoise(0.8),214,data/214
+0,7,DOWN,B,"('A', 'B', 'C', 'D')",10,0.4,2,224,224,BernoulliNoise(0.8),246,data/246
+0,3,UP_RIGHT,A,"('A', 'B', 'C', 'D')",30,0.6,2,224,224,BernoulliNoise(0.8),188,data/188
+0,7,DOWN,A,"('A', 'B', 'C', 'D')",10,0.6,2,224,224,BernoulliNoise(0.8),240,data/240
+0,7,DOWN,1,"('0', '1')",20,0.2,2,224,224,BernoulliNoise(0.8),226,data/226
+0,3,UP_RIGHT,B,"('A', 'B', 'C', 'D')",30,0.4,2,224,224,BernoulliNoise(0.8),194,data/194
+0,7,DOWN,C,"('A', 'B', 'C', 'D')",10,0.2,2,224,224,BernoulliNoise(0.8),252,data/252
+0,7,DOWN,0,"('0', '1')",20,0.4,2,224,224,BernoulliNoise(0.8),220,data/220
+0,3,UP_RIGHT,C,"('A', 'B', 'C', 'D')",30,0.2,2,224,224,BernoulliNoise(0.8),200,data/200
+0,3,UP_RIGHT,C,"('A', 'B', 'C', 'D')",30,0.4,2,224,224,BernoulliNoise(0.8),203,data/203
+0,3,UP_RIGHT,D,"('A', 'B', 'C', 'D')",30,0.2,2,224,224,BernoulliNoise(0.8),209,data/209
+0,7,DOWN,D,"('A', 'B', 'C', 'D')",10,0.2,2,224,224,BernoulliNoise(0.8),261,data/261
+0,7,DOWN,1,"('0', '1')",20,0.4,2,224,224,BernoulliNoise(0.8),229,data/229
+0,3,UP_RIGHT,D,"('A', 'B', 'C', 'D')",30,0.4,2,224,224,BernoulliNoise(0.8),212,data/212
+0,7,DOWN,B,"('A', 'B', 'C', 'D')",10,0.6,2,224,224,BernoulliNoise(0.8),249,data/249
+0,7,DOWN,C,"('A', 'B', 'C', 'D')",10,0.4,2,224,224,BernoulliNoise(0.8),255,data/255
+0,3,UP_RIGHT,B,"('A', 'B', 'C', 'D')",30,0.6,2,224,224,BernoulliNoise(0.8),197,data/197
+0,7,DOWN,A,"('A', 'B', 'C', 'D')",20,0.2,2,224,224,BernoulliNoise(0.8),235,data/235
+0,7,DOWN,1,"('0', '1')",20,0.6,2,224,224,BernoulliNoise(0.8),232,data/232
+0,7,DOWN,0,"('0', '1')",20,0.6,2,224,224,BernoulliNoise(0.8),223,data/223
+0,3,UP_RIGHT,C,"('A', 'B', 'C', 'D')",30,0.6,2,224,224,BernoulliNoise(0.8),206,data/206
+0,7,DOWN,D,"('A', 'B', 'C', 'D')",10,0.4,2,224,224,BernoulliNoise(0.8),264,data/264
+0,7,DOWN,B,"('A', 'B', 'C', 'D')",20,0.2,2,224,224,BernoulliNoise(0.8),244,data/244
+0,7,DOWN,A,"('A', 'B', 'C', 'D')",20,0.4,2,224,224,BernoulliNoise(0.8),238,data/238
+0,7,DOWN,0,"('0', '1')",30,0.2,2,224,224,BernoulliNoise(0.8),218,data/218
+0,7,DOWN,C,"('A', 'B', 'C', 'D')",10,0.6,2,224,224,BernoulliNoise(0.8),258,data/258
+0,7,DOWN,1,"('0', '1')",30,0.2,2,224,224,BernoulliNoise(0.8),227,data/227
+0,7,DOWN,A,"('A', 'B', 'C', 'D')",20,0.6,2,224,224,BernoulliNoise(0.8),241,data/241
+0,7,UP_RIGHT,0,"('0', '1')",10,0.2,2,224,224,BernoulliNoise(0.8),270,data/270
+0,7,DOWN,0,"('0', '1')",30,0.4,2,224,224,BernoulliNoise(0.8),221,data/221
+0,7,DOWN,D,"('A', 'B', 'C', 'D')",10,0.6,2,224,224,BernoulliNoise(0.8),267,data/267
+0,7,DOWN,A,"('A', 'B', 'C', 'D')",30,0.2,2,224,224,BernoulliNoise(0.8),236,data/236
+0,7,UP_RIGHT,0,"('0', '1')",10,0.4,2,224,224,BernoulliNoise(0.8),273,data/273
+0,3,UP_RIGHT,D,"('A', 'B', 'C', 'D')",30,0.6,2,224,224,BernoulliNoise(0.8),215,data/215
+0,7,DOWN,C,"('A', 'B', 'C', 'D')",20,0.4,2,224,224,BernoulliNoise(0.8),256,data/256
+0,7,UP_RIGHT,1,"('0', '1')",10,0.2,2,224,224,BernoulliNoise(0.8),279,data/279
+0,7,DOWN,B,"('A', 'B', 'C', 'D')",20,0.4,2,224,224,BernoulliNoise(0.8),247,data/247
+0,7,DOWN,C,"('A', 'B', 'C', 'D')",20,0.2,2,224,224,BernoulliNoise(0.8),253,data/253
+0,7,DOWN,D,"('A', 'B', 'C', 'D')",20,0.2,2,224,224,BernoulliNoise(0.8),262,data/262
+0,7,DOWN,0,"('0', '1')",30,0.6,2,224,224,BernoulliNoise(0.8),224,data/224
+0,7,DOWN,B,"('A', 'B', 'C', 'D')",20,0.6,2,224,224,BernoulliNoise(0.8),250,data/250
+0,7,DOWN,1,"('0', '1')",30,0.4,2,224,224,BernoulliNoise(0.8),230,data/230
+0,7,DOWN,A,"('A', 'B', 'C', 'D')",30,0.4,2,224,224,BernoulliNoise(0.8),239,data/239
+0,7,UP_RIGHT,1,"('0', '1')",10,0.4,2,224,224,BernoulliNoise(0.8),282,data/282
+0,7,UP_RIGHT,A,"('A', 'B', 'C', 'D')",10,0.2,2,224,224,BernoulliNoise(0.8),288,data/288
+0,7,DOWN,B,"('A', 'B', 'C', 'D')",30,0.2,2,224,224,BernoulliNoise(0.8),245,data/245
+0,7,DOWN,D,"('A', 'B', 'C', 'D')",20,0.4,2,224,224,BernoulliNoise(0.8),265,data/265
+0,7,UP_RIGHT,1,"('0', '1')",10,0.6,2,224,224,BernoulliNoise(0.8),285,data/285
+0,7,DOWN,C,"('A', 'B', 'C', 'D')",20,0.6,2,224,224,BernoulliNoise(0.8),259,data/259
+0,7,UP_RIGHT,0,"('0', '1')",10,0.6,2,224,224,BernoulliNoise(0.8),276,data/276
+0,7,DOWN,1,"('0', '1')",30,0.6,2,224,224,BernoulliNoise(0.8),233,data/233
+0,7,UP_RIGHT,A,"('A', 'B', 'C', 'D')",10,0.4,2,224,224,BernoulliNoise(0.8),291,data/291
+0,7,UP_RIGHT,B,"('A', 'B', 'C', 'D')",10,0.2,2,224,224,BernoulliNoise(0.8),297,data/297
+0,7,DOWN,C,"('A', 'B', 'C', 'D')",30,0.2,2,224,224,BernoulliNoise(0.8),254,data/254
+0,7,DOWN,D,"('A', 'B', 'C', 'D')",30,0.2,2,224,224,BernoulliNoise(0.8),263,data/263
+0,7,UP_RIGHT,1,"('0', '1')",20,0.2,2,224,224,BernoulliNoise(0.8),280,data/280
+0,7,DOWN,D,"('A', 'B', 'C', 'D')",20,0.6,2,224,224,BernoulliNoise(0.8),268,data/268
+0,7,DOWN,B,"('A', 'B', 'C', 'D')",30,0.4,2,224,224,BernoulliNoise(0.8),248,data/248
+0,7,UP_RIGHT,C,"('A', 'B', 'C', 'D')",10,0.2,2,224,224,BernoulliNoise(0.8),306,data/306
+0,7,DOWN,A,"('A', 'B', 'C', 'D')",30,0.6,2,224,224,BernoulliNoise(0.8),242,data/242
+0,7,UP_RIGHT,A,"('A', 'B', 'C', 'D')",20,0.2,2,224,224,BernoulliNoise(0.8),289,data/289
+0,7,UP_RIGHT,0,"('0', '1')",20,0.2,2,224,224,BernoulliNoise(0.8),271,data/271
+0,7,UP_RIGHT,B,"('A', 'B', 'C', 'D')",10,0.4,2,224,224,BernoulliNoise(0.8),300,data/300
+0,7,UP_RIGHT,0,"('0', '1')",20,0.4,2,224,224,BernoulliNoise(0.8),274,data/274
+0,7,UP_RIGHT,C,"('A', 'B', 'C', 'D')",10,0.4,2,224,224,BernoulliNoise(0.8),309,data/309
+0,7,DOWN,D,"('A', 'B', 'C', 'D')",30,0.4,2,224,224,BernoulliNoise(0.8),266,data/266
+0,7,UP_RIGHT,A,"('A', 'B', 'C', 'D')",10,0.6,2,224,224,BernoulliNoise(0.8),294,data/294
+0,7,UP_RIGHT,A,"('A', 'B', 'C', 'D')",20,0.4,2,224,224,BernoulliNoise(0.8),292,data/292
+0,7,UP_RIGHT,0,"('0', '1')",20,0.6,2,224,224,BernoulliNoise(0.8),277,data/277
+0,7,UP_RIGHT,D,"('A', 'B', 'C', 'D')",10,0.2,2,224,224,BernoulliNoise(0.8),315,data/315
+0,7,UP_RIGHT,B,"('A', 'B', 'C', 'D')",10,0.6,2,224,224,BernoulliNoise(0.8),303,data/303
+0,7,UP_RIGHT,D,"('A', 'B', 'C', 'D')",10,0.4,2,224,224,BernoulliNoise(0.8),318,data/318
+0,7,UP_RIGHT,1,"('0', '1')",20,0.4,2,224,224,BernoulliNoise(0.8),283,data/283
+0,7,DOWN,C,"('A', 'B', 'C', 'D')",30,0.4,2,224,224,BernoulliNoise(0.8),257,data/257
+0,7,UP_RIGHT,C,"('A', 'B', 'C', 'D')",10,0.6,2,224,224,BernoulliNoise(0.8),312,data/312
+0,7,DOWN,C,"('A', 'B', 'C', 'D')",30,0.6,2,224,224,BernoulliNoise(0.8),260,data/260
+0,7,DOWN,B,"('A', 'B', 'C', 'D')",30,0.6,2,224,224,BernoulliNoise(0.8),251,data/251
+0,7,UP_RIGHT,1,"('0', '1')",20,0.6,2,224,224,BernoulliNoise(0.8),286,data/286
+0,7,UP_RIGHT,B,"('A', 'B', 'C', 'D')",20,0.2,2,224,224,BernoulliNoise(0.8),298,data/298
+0,7,UP_RIGHT,0,"('0', '1')",30,0.2,2,224,224,BernoulliNoise(0.8),272,data/272
+0,7,UP_RIGHT,D,"('A', 'B', 'C', 'D')",10,0.6,2,224,224,BernoulliNoise(0.8),321,data/321
+0,7,UP_RIGHT,C,"('A', 'B', 'C', 'D')",20,0.2,2,224,224,BernoulliNoise(0.8),307,data/307
+0,7,UP_RIGHT,1,"('0', '1')",30,0.2,2,224,224,BernoulliNoise(0.8),281,data/281
+0,7,DOWN,D,"('A', 'B', 'C', 'D')",30,0.6,2,224,224,BernoulliNoise(0.8),269,data/269
+0,7,UP_RIGHT,0,"('0', '1')",30,0.4,2,224,224,BernoulliNoise(0.8),275,data/275
+0,7,UP_RIGHT,A,"('A', 'B', 'C', 'D')",20,0.6,2,224,224,BernoulliNoise(0.8),295,data/295
+0,7,UP_RIGHT,1,"('0', '1')",30,0.6,2,224,224,BernoulliNoise(0.8),287,data/287
+0,7,UP_RIGHT,1,"('0', '1')",30,0.4,2,224,224,BernoulliNoise(0.8),284,data/284
+0,7,UP_RIGHT,D,"('A', 'B', 'C', 'D')",20,0.2,2,224,224,BernoulliNoise(0.8),316,data/316
+0,7,UP_RIGHT,C,"('A', 'B', 'C', 'D')",20,0.4,2,224,224,BernoulliNoise(0.8),310,data/310
+0,7,UP_RIGHT,A,"('A', 'B', 'C', 'D')",30,0.2,2,224,224,BernoulliNoise(0.8),290,data/290
+0,7,UP_RIGHT,B,"('A', 'B', 'C', 'D')",20,0.4,2,224,224,BernoulliNoise(0.8),301,data/301
+0,7,UP_RIGHT,0,"('0', '1')",30,0.6,2,224,224,BernoulliNoise(0.8),278,data/278
+0,7,UP_RIGHT,C,"('A', 'B', 'C', 'D')",30,0.2,2,224,224,BernoulliNoise(0.8),308,data/308
+0,7,UP_RIGHT,C,"('A', 'B', 'C', 'D')",20,0.6,2,224,224,BernoulliNoise(0.8),313,data/313
+0,7,UP_RIGHT,A,"('A', 'B', 'C', 'D')",30,0.4,2,224,224,BernoulliNoise(0.8),293,data/293
+0,7,UP_RIGHT,B,"('A', 'B', 'C', 'D')",20,0.6,2,224,224,BernoulliNoise(0.8),304,data/304
+0,7,UP_RIGHT,D,"('A', 'B', 'C', 'D')",20,0.4,2,224,224,BernoulliNoise(0.8),319,data/319
+0,7,UP_RIGHT,B,"('A', 'B', 'C', 'D')",30,0.2,2,224,224,BernoulliNoise(0.8),299,data/299
+0,7,UP_RIGHT,D,"('A', 'B', 'C', 'D')",20,0.6,2,224,224,BernoulliNoise(0.8),322,data/322
+0,7,UP_RIGHT,A,"('A', 'B', 'C', 'D')",30,0.6,2,224,224,BernoulliNoise(0.8),296,data/296
+0,7,UP_RIGHT,C,"('A', 'B', 'C', 'D')",30,0.4,2,224,224,BernoulliNoise(0.8),311,data/311
+0,7,UP_RIGHT,B,"('A', 'B', 'C', 'D')",30,0.4,2,224,224,BernoulliNoise(0.8),302,data/302
+0,7,UP_RIGHT,D,"('A', 'B', 'C', 'D')",30,0.2,2,224,224,BernoulliNoise(0.8),317,data/317
+0,7,UP_RIGHT,D,"('A', 'B', 'C', 'D')",30,0.4,2,224,224,BernoulliNoise(0.8),320,data/320
+0,7,UP_RIGHT,B,"('A', 'B', 'C', 'D')",30,0.6,2,224,224,BernoulliNoise(0.8),305,data/305
+0,7,UP_RIGHT,C,"('A', 'B', 'C', 'D')",30,0.6,2,224,224,BernoulliNoise(0.8),314,data/314
+0,7,UP_RIGHT,D,"('A', 'B', 'C', 'D')",30,0.6,2,224,224,BernoulliNoise(0.8),323,data/323
