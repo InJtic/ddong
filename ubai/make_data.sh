@@ -1,8 +1,8 @@
 #!/bin/bash
 #SBATCH --nodes=1 
 #SBATCH --partition=gpu2 
-#SBATCH --cpus-per-task=56 
-#SBATCH --gres=gpu:4
+#SBATCH --cpus-per-task=4
+#SBATCH --gres=gpu:1
 #SBATCH --job-name=UBAIJOB 
 #SBATCH -o ./logs/jupyter.%N.%j.out  # STDOUT 
 #SBATCH -e ./logs/jupyter.%N.%j.err  # STDERR
