@@ -118,11 +118,11 @@ def get_text_mask(
     height: int,
     text: str,
     font: ImageFont.ImageFont | ImageFont.FreeTypeFont,
-) -> NDArray[np.bool]:
+) -> NDArray[np.bool_]:
     mask = Image.new("L", (width, height), 0)
     draw = ImageDraw.Draw(mask)
     draw.text(xy=position, text=text, font=font, fill=1)
-    return np.array(mask).astype(np.bool)
+    return np.array(mask).astype(np.bool_)
 
 
 @dataclass

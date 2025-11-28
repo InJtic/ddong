@@ -5,14 +5,27 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "accelerate>=1.12.0",
-    "datasets>=4.4.1",
-    "decord>=0.6.0",
-    "numpy>=2.3.5",
-    "opencv-python>=4.11.0.86",
-    "pandas>=2.3.3",
-    "pillow>=12.0.0",
-    "torch>=2.9.1",
-    "torchvision>=0.24.1",
-    "transformers>=4.57.1",
+    "accelerate",
+    "datasets",
+    "decord",
+    "numpy",
+    "opencv-python",
+    "pandas",
+    "pillow",
+    "torch",
+    "torchvision",
+    "transformers",
 ]
+
+[tool.uv.sources]
+torch = [
+  { index = "pytorch-cu118", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
+]
+torchvision = [
+  { index = "pytorch-cu118", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu118"
+url = "https://download.pytorch.org/whl/cu118"
+explicit = true

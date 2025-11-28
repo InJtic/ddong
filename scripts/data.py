@@ -38,7 +38,7 @@ def process(arg: ProcessArg):
         font_size,
         fps,
     ) = arg
-    n_position_sample = 25
+    n_position_sample = 1
     binary = ("0", "1")
     quad = ("A", "B", "C", "D")
 
@@ -67,7 +67,7 @@ def process(arg: ProcessArg):
         length=2,
         width=224,
         height=224,
-        noise="BernoulliNoise(0.8)",
+        noise="BernoulliNoise(1)",
         seed=index,
         savedat=directory,
     )
@@ -99,7 +99,7 @@ def execute(
     )
     length = 2
     total_frames = fps * length
-    noise_generator = BernoulliNoise(0.8)
+    noise_generator = BernoulliNoise(1)
 
     info = DataGenerationConfig(
         text=text,
@@ -122,12 +122,12 @@ def execute(
 
 
 def main():
-    speeds = (1, 3, 7)
+    speeds = (1,)  # 3, 7)
     directions = (Direction.DOWN, Direction.UP_RIGHT)
-    labels = tuple("01ABCD")
+    labels = tuple("0")  # 1ABCD")
     tasks = []
-    font_sizes = (0.2, 0.4, 0.6)
-    fpss = (10, 20, 30)
+    font_sizes = (0.2,)  # 0.4, 0.6)
+    fpss = (10,)  # 20, 30)
 
     for i, (
         speed,
