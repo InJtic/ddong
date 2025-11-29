@@ -28,7 +28,10 @@ class VideoData:
             isColor=True,
         )
         for frame in self.data:
-            writer.write(cv2.cvtColor(frame, cv2.COLOR_GRAY2BGR))
+            if frame.ndim == 3 and frame.shape[2] == 3:
+                writer.write(frame)
+            else:
+                writer.write(cv2.cvtColor(frame, cv2.COLOR_GRAY2BGR))
         writer.release()
 
 
@@ -54,6 +57,12 @@ class DataGenerator:
 
             for text, background in zip(text_generator, background_generator):
                 frame = background.copy()
+                if frame.ndim == 3:
+                    if text.ndim == 2:
+                        text = cv2.cvtColor(text, cv2.COLOR_GRAY2BGR)
+                else:
+                    if text.ndim == 3:
+                        text = cv2.cvtColor(text, cv2.COLOR_BGR2GRAY)
                 frame[mask] = text[mask]
 
                 frames.append(frame)

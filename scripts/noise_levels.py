@@ -18,6 +18,12 @@ from concurrent.futures import ProcessPoolExecutor, as_completed
 from tqdm import tqdm
 import os
 from typing import NamedTuple
+from dataclasses import dataclass
+
+
+@dataclass
+class MetadataWithNoiseLevels(Metadata):
+    noise_level: float
 
 
 class ProcessArg(NamedTuple):
@@ -27,6 +33,7 @@ class ProcessArg(NamedTuple):
     label: str
     font_size: float
     fps: int
+    noise_level: float
 
 
 def process(arg: ProcessArg):
@@ -37,12 +44,13 @@ def process(arg: ProcessArg):
         label,
         font_size,
         fps,
+        noise_level,
     ) = arg
-    n_position_sample = 1
+    n_position_sample = 9
     binary = ("0", "1")
     quad = ("A", "B", "C", "D")
 
-    directory = f"data/{index}"
+    directory = f"data/noise_levels/{index}"
 
     np.random.seed(index)
 
@@ -55,9 +63,10 @@ def process(arg: ProcessArg):
         n_position_sample=n_position_sample,
         fps=fps,
         directory=directory,
+        noise_level=noise_level,
     )
 
-    return Metadata(
+    return MetadataWithNoiseLevels(
         move_per_frame=speed,
         move_direction=direction.name,
         label=label,
@@ -67,9 +76,10 @@ def process(arg: ProcessArg):
         length=2,
         width=224,
         height=224,
-        noise="BernoulliNoise(0.8)",
+        noise=f"BernoulliNoise({noise_level})",
         seed=index,
         savedat=directory,
+        noise_level=noise_level,
     )
 
 
@@ -80,6 +90,7 @@ def execute(
     n_position_sample: int,
     fps: int,
     directory: str,
+    noise_level: float,
 ):
     width = 224
     height = 224
@@ -99,7 +110,7 @@ def execute(
     )
     length = 2
     total_frames = fps * length
-    noise_generator = BernoulliNoise(0.8)
+    noise_generator = BernoulliNoise(noise_level)
 
     info = DataGenerationConfig(
         text=text,
@@ -113,7 +124,6 @@ def execute(
         height=height,
         fps=fps,
         length=length,
-        text_fill=True,
     ).build()
 
     data_generator = DataGenerator(info)
@@ -123,14 +133,15 @@ def execute(
 
 
 def main():
-    speeds = (1,)  # 3, 7)
+    speeds = (1, 3, 7)
     directions = (Direction.DOWN, Direction.UP_RIGHT)
-    labels = tuple("0")  # 1ABCD")
+    labels = tuple("01ABCD")
     tasks = []
-    font_sizes = (0.2,)  # 0.4, 0.6)
-    fpss = (10,)  # 20, 30)
+    font_sizes = (0.2, 0.4, 0.6)
+    fpss = (10, 20, 30)
 
     for i, (
+        noise_level,
         speed,
         direction,
         label,
@@ -138,6 +149,7 @@ def main():
         fps,
     ) in enumerate(
         product(
+            (1, 0.999, 0.99, 0.9, 0.8),
             speeds,
             directions,
             labels,
@@ -145,9 +157,9 @@ def main():
             fpss,
         )
     ):
-        tasks.append((i, speed, direction, label, font_size, fps))
+        tasks.append((i, speed, direction, label, font_size, fps, noise_level))
 
-    metadata_path = "data/metadata.csv"
+    metadata_path = "data/noise_levels/metadata.csv"
 
     if os.path.exists(metadata_path):
         os.remove(metadata_path)

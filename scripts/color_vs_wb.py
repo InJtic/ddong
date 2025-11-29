@@ -10,7 +10,7 @@ FPS : (10, 20, 30)
 from src.transition import Transition, LinearTransition, Direction, NoTransition
 from src.config import DataGenerationConfig
 from src.utils import get_position_builder, get_sized_fonts, save_metadata, Metadata
-from src.data.noise import BernoulliNoise
+from src.data.noise import BernoulliNoise, GaussianNoise, NoiseGenerator
 from src.data.generator import DataGenerator
 from itertools import product
 import numpy as np
@@ -27,6 +27,7 @@ class ProcessArg(NamedTuple):
     label: str
     font_size: float
     fps: int
+    noise: NoiseGenerator
 
 
 def process(arg: ProcessArg):
@@ -37,12 +38,13 @@ def process(arg: ProcessArg):
         label,
         font_size,
         fps,
+        noise,
     ) = arg
-    n_position_sample = 1
+    n_position_sample = 9
     binary = ("0", "1")
     quad = ("A", "B", "C", "D")
 
-    directory = f"data/{index}"
+    directory = f"data/color_vs_wb/{index}"
 
     np.random.seed(index)
 
@@ -55,6 +57,7 @@ def process(arg: ProcessArg):
         n_position_sample=n_position_sample,
         fps=fps,
         directory=directory,
+        noise=noise,
     )
 
     return Metadata(
@@ -67,7 +70,7 @@ def process(arg: ProcessArg):
         length=2,
         width=224,
         height=224,
-        noise="BernoulliNoise(0.8)",
+        noise=repr(noise),
         seed=index,
         savedat=directory,
     )
@@ -80,6 +83,7 @@ def execute(
     n_position_sample: int,
     fps: int,
     directory: str,
+    noise: NoiseGenerator,
 ):
     width = 224
     height = 224
@@ -99,13 +103,12 @@ def execute(
     )
     length = 2
     total_frames = fps * length
-    noise_generator = BernoulliNoise(0.8)
 
     info = DataGenerationConfig(
         text=text,
         font=font,
         text_position=position_builder,
-        noise_generator=noise_generator,
+        noise_generator=noise,
         text_transition=text_transition,
         n_position_sample=n_position_sample,
         background_transition=NoTransition(total_frames=total_frames),
@@ -113,7 +116,6 @@ def execute(
         height=height,
         fps=fps,
         length=length,
-        text_fill=True,
     ).build()
 
     data_generator = DataGenerator(info)
@@ -123,14 +125,15 @@ def execute(
 
 
 def main():
-    speeds = (1,)  # 3, 7)
+    speeds = (1, 3, 7)
     directions = (Direction.DOWN, Direction.UP_RIGHT)
-    labels = tuple("0")  # 1ABCD")
+    labels = tuple("01ABCD")
     tasks = []
-    font_sizes = (0.2,)  # 0.4, 0.6)
-    fpss = (10,)  # 20, 30)
+    font_sizes = (0.2, 0.4, 0.6)
+    fpss = (10, 20, 30)
 
     for i, (
+        noise,
         speed,
         direction,
         label,
@@ -138,6 +141,7 @@ def main():
         fps,
     ) in enumerate(
         product(
+            (BernoulliNoise(0.8), GaussianNoise(mean=127, std=20)),
             speeds,
             directions,
             labels,
@@ -145,14 +149,12 @@ def main():
             fpss,
         )
     ):
-        tasks.append((i, speed, direction, label, font_size, fps))
+        tasks.append((i, speed, direction, label, font_size, fps, noise))
 
-    metadata_path = "data/metadata.csv"
+    metadata_path = "data/color_vs_wb/metadata.csv"
 
     if os.path.exists(metadata_path):
         os.remove(metadata_path)
-
-    print(f"Total Tasks: {len(tasks)}")
 
     with ProcessPoolExecutor() as executor:
         futures = [executor.submit(process, task) for task in tasks]

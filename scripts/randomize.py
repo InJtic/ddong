@@ -1,12 +1,3 @@
-"""
-이동 속도 : (1, 3, 7)
-전환 방법 : (LinearTransform(direction.DOWN), LinearTransform(direction.UP_RIGHT))
-텍스트 : ["0", "1", "A", "B", "C", "D"]
-레이블 당 위치 수 : 25
-폰트 사이즈 : (0.2, 0.4, 0.6)
-FPS : (10, 20, 30)
-"""
-
 from src.transition import Transition, LinearTransition, Direction, NoTransition
 from src.config import DataGenerationConfig
 from src.utils import get_position_builder, get_sized_fonts, save_metadata, Metadata
@@ -38,11 +29,11 @@ def process(arg: ProcessArg):
         font_size,
         fps,
     ) = arg
-    n_position_sample = 1
+    n_position_sample = 9
     binary = ("0", "1")
     quad = ("A", "B", "C", "D")
 
-    directory = f"data/{index}"
+    directory = f"data/center/{index}"
 
     np.random.seed(index)
 
@@ -91,7 +82,7 @@ def execute(
         text=text,
         percent=font_size_percent,
     )
-    position_builder = get_position_builder(
+    position = get_position_builder(
         text=text,
         font=font,
         width=width,
@@ -104,7 +95,7 @@ def execute(
     info = DataGenerationConfig(
         text=text,
         font=font,
-        text_position=position_builder,
+        text_position=position,
         noise_generator=noise_generator,
         text_transition=text_transition,
         n_position_sample=n_position_sample,
@@ -113,7 +104,7 @@ def execute(
         height=height,
         fps=fps,
         length=length,
-        text_fill=True,
+        text_fill=False,
     ).build()
 
     data_generator = DataGenerator(info)
@@ -123,12 +114,12 @@ def execute(
 
 
 def main():
-    speeds = (1,)  # 3, 7)
+    speeds = (1, 3, 7)
     directions = (Direction.DOWN, Direction.UP_RIGHT)
-    labels = tuple("0")  # 1ABCD")
+    labels = tuple("01ABCD")
     tasks = []
-    font_sizes = (0.2,)  # 0.4, 0.6)
-    fpss = (10,)  # 20, 30)
+    font_sizes = (0.2, 0.4, 0.6)
+    fpss = (10, 20, 30)
 
     for i, (
         speed,
@@ -147,7 +138,7 @@ def main():
     ):
         tasks.append((i, speed, direction, label, font_size, fps))
 
-    metadata_path = "data/metadata.csv"
+    metadata_path = "data/center/metadata.csv"
 
     if os.path.exists(metadata_path):
         os.remove(metadata_path)

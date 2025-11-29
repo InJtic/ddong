@@ -71,6 +71,9 @@ class DataGenerationConfig:
     fps: int
     length: float
 
+    # 기타 설정
+    text_fill: bool = False
+
     def build(self) -> list[DataInfo]:
         """만들어질 데이터의 정보를 담은 리스트를 반환합니다."""
 
@@ -110,12 +113,19 @@ class DataGenerationConfig:
             positions,
             fonts,
         ):
+            if not self.text_fill:
+                text_initial = self.noise_generator(
+                    width=self.width, height=self.height
+                )
+            else:
+                text_initial = np.zeros((self.height, self.width), dtype=np.uint8)
+
             text_info.append(
                 TextInfo(
                     text=text,
                     font=font,
                     position=position,
-                    initial=self.noise_generator(width=self.width, height=self.height),
+                    initial=text_initial,
                     transition=transition,
                 )
             )

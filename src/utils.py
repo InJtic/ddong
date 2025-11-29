@@ -112,6 +112,22 @@ def get_position_builder(
     )
 
 
+def get_centered_position(
+    text: str,
+    font: ImageFont.ImageFont | ImageFont.FreeTypeFont,
+    width: int,
+    height: int,
+) -> Position:
+    text_image = Image.new("L", (width, height), 0)
+    draw = ImageDraw.Draw(text_image)
+    bbox = draw.textbbox((0, 0), text, font=font)
+
+    x = (width - (bbox[2] - bbox[0])) / 2 - bbox[0]
+    y = (height - (bbox[3] - bbox[1])) / 2 - bbox[1]
+
+    return (x, y)
+
+
 def get_text_mask(
     position: Position,
     width: int,

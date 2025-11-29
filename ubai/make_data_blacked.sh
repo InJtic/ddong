@@ -16,4 +16,4 @@ module load cuda/11.8.0
 
 export PYTHONPATH=.
 
-python scripts/center_vs_random.py
+python scripts/test.py
