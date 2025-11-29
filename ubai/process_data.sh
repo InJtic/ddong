@@ -16,4 +16,6 @@ module load cuda/11.8.0
 
 export PYTHONPATH=.
 
-python src/data/process.py
+python src/data/process.py \
+    --data data/black_vs_noise \
+    --output data/black_vs_noise/data.jsonl
