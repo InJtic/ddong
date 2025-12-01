@@ -171,3 +171,14 @@ def save_metadata(
         pathobj.touch()
 
     df.to_csv(path, mode="a", index=True)
+
+
+def cleanup(file_path):
+    with open(file_path, "r") as f:
+        lines = f.readlines()
+
+    with open(file_path, "w") as f:
+        for i, line in enumerate(lines):
+            if i > 0 and i % 2 == 0:
+                continue
+            f.write(line)

@@ -17,6 +17,7 @@ import os
 from typing import NamedTuple
 from src.config import Position
 from typing import Callable
+from src.utils import cleanup
 from dataclasses import dataclass
 
 
@@ -28,6 +29,7 @@ class ProcessArg(NamedTuple):
     font_size: float
     fps: int
     position: Callable[..., Position] | Callable[..., Callable[..., Position]]
+    noise_level: float
 
 
 @dataclass
@@ -36,15 +38,7 @@ class MetadataWithPosition(Metadata):
 
 
 def process(arg: ProcessArg):
-    (
-        index,
-        speed,
-        direction,
-        label,
-        font_size,
-        fps,
-        position,
-    ) = arg
+    (index, speed, direction, label, font_size, fps, position, noise_level) = arg
     n_position_sample = 9
     binary = ("0", "1")
     quad = ("A", "B", "C", "D")
@@ -75,6 +69,7 @@ def process(arg: ProcessArg):
         fps=fps,
         directory=directory,
         position=position_eval,
+        noise_level=noise_level,
     )
 
     return MetadataWithPosition(
@@ -87,7 +82,7 @@ def process(arg: ProcessArg):
         length=2,
         width=224,
         height=224,
-        noise="BernoulliNoise(0.8)",
+        noise=f"BernoulliNoise({noise_level})",
         seed=index,
         savedat=directory,
         position="random" if callable(position_eval) else "centered",
@@ -102,6 +97,7 @@ def execute(
     fps: int,
     directory: str,
     position: Position | Callable[..., Position],
+    noise_level: float,
 ):
     width = 224
     height = 224
@@ -115,7 +111,7 @@ def execute(
     )
     length = 2
     total_frames = fps * length
-    noise_generator = BernoulliNoise(0.8)
+    noise_generator = BernoulliNoise(noise_level)
 
     info = DataGenerationConfig(
         text=text,
@@ -139,12 +135,12 @@ def execute(
 
 
 def main():
-    speeds = (1, 3, 7)
-    directions = (Direction.DOWN, Direction.UP_RIGHT)
+    speeds = (1,)  # 3, 7)
+    directions = (Direction.DOWN,)  # Direction.UP_RIGHT)
     labels = tuple("01ABCD")
     tasks = []
-    font_sizes = (0.2, 0.4, 0.6)
-    fpss = (10, 20, 30)
+    font_sizes = (0.2,)  # 0.4, 0.6)
+    fpss = (10,)  # 20, 30)
 
     for i, (
         position,
@@ -153,6 +149,7 @@ def main():
         label,
         font_size,
         fps,
+        noise_level,
     ) in enumerate(
         product(
             (get_centered_position, get_position_builder),
@@ -161,9 +158,12 @@ def main():
             labels,
             font_sizes,
             fpss,
+            (1, 0.999, 0.99, 0.9, 0.8),
         )
     ):
-        tasks.append((i, speed, direction, label, font_size, fps, position))
+        tasks.append(
+            (i, speed, direction, label, font_size, fps, position, noise_level)
+        )
 
     metadata_path = "data/center_vs_random/metadata.csv"
 
@@ -183,3 +183,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    cleanup("data/center_vs_random/metadata.csv")

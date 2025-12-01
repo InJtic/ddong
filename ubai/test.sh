@@ -16,7 +16,4 @@ module load cuda/11.8.0
 
 export PYTHONPATH=.
 
-python scripts/black_vs_noise.py
-python scripts/center_vs_random.py
-python scripts/color_vs_wb.py
-python scripts/direction.py
+python scripts/data.py

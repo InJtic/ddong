@@ -17,6 +17,7 @@ import numpy as np
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from tqdm import tqdm
 import os
+from src.utils import cleanup
 from typing import NamedTuple
 
 
@@ -125,12 +126,12 @@ def execute(
 
 
 def main():
-    speeds = (1, 3, 7)
-    directions = (Direction.DOWN, Direction.UP_RIGHT)
+    speeds = (1,)  # 3, 7)
+    directions = (Direction.DOWN,)  # Direction.UP_RIGHT)
     labels = tuple("01ABCD")
     tasks = []
-    font_sizes = (0.2, 0.4, 0.6)
-    fpss = (10, 20, 30)
+    font_sizes = (0.2,)  # 0.4, 0.6)
+    fpss = (10,)  # 20, 30)
 
     for i, (
         noise,
@@ -141,7 +142,19 @@ def main():
         fps,
     ) in enumerate(
         product(
-            (BernoulliNoise(0.8), GaussianNoise(mean=127, std=20)),
+            # (BernoulliNoise(0.8), GaussianNoise(mean=127, std=20)),
+            (
+                BernoulliNoise(1),
+                GaussianNoise(mean=255 * 1, std=20),
+                BernoulliNoise(0.999),
+                GaussianNoise(mean=255 * 0.999, std=20),
+                BernoulliNoise(0.99),
+                GaussianNoise(mean=255 * 0.99, std=20),
+                BernoulliNoise(0.9),
+                GaussianNoise(mean=255 * 0.9, std=20),
+                BernoulliNoise(0.8),
+                GaussianNoise(mean=255 * 0.8, std=20),
+            ),
             speeds,
             directions,
             labels,
@@ -167,3 +180,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    cleanup("data/color_vs_wb/metadata.csv")

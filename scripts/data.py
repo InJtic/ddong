@@ -42,7 +42,7 @@ def process(arg: ProcessArg):
     binary = ("0", "1")
     quad = ("A", "B", "C", "D")
 
-    directory = f"data/{index}"
+    directory = f"data/asdf/{index}"
 
     np.random.seed(index)
 
@@ -99,7 +99,7 @@ def execute(
     )
     length = 2
     total_frames = fps * length
-    noise_generator = BernoulliNoise(0.8)
+    noise_generator = BernoulliNoise(0.2)
 
     info = DataGenerationConfig(
         text=text,
@@ -113,7 +113,7 @@ def execute(
         height=height,
         fps=fps,
         length=length,
-        text_fill=True,
+        text_fill=False,
     ).build()
 
     data_generator = DataGenerator(info)
@@ -147,7 +147,7 @@ def main():
     ):
         tasks.append((i, speed, direction, label, font_size, fps))
 
-    metadata_path = "data/metadata.csv"
+    metadata_path = "data/asdf/metadata.csv"
 
     if os.path.exists(metadata_path):
         os.remove(metadata_path)

@@ -18,20 +18,20 @@ export PYTHONPATH=.
 
 python src/data/process.py \
     --data data/black_vs_noise \
-    --output data/black_vs_noise/data.jsonl \
-    --filter black_vs_noise_filter \
+    --output data/black_vs_noise/data_light.jsonl \
+    --filter black_vs_noise_filter_light \
 
 python src/data/process.py \
     --data data/center_vs_random \
-    --output data/center_vs_random/data.jsonl \
-    --filter center_vs_random_filter \
+    --output data/center_vs_random/data_light.jsonl \
+    --filter center_vs_random_filter_light \
 
 python src/data/process.py \
     --data data/color_vs_wb \
-    --output data/color_vs_wb/data.jsonl \
-    --filter color_vs_wb_filter \
+    --output data/color_vs_wb/data_light.jsonl \
+    --filter color_vs_wb_filter_light \
 
 python src/data/process.py \
     --data data/direction \
-    --output data/direction/data.jsonl \
-    --filter direction_filter \
+    --output data/direction/data_light.jsonl \
+    --filter direction_filter_light \
